@@ -38,8 +38,8 @@ int main() {
        	  if ( (login())) {
        		  LCD_voidSendCommand(LCD_CLEAR_DISPLAY);
        		  SetDDRAM_Add(0);
-       		  LCD_voidPrintStr("Unlocked!");
-       		  Servo_SetAngle(SERVO1, 90);  // Unlock
+       		  LCD_voidPrintStr("Unlocked!"); // UNLocked System
+       		  Servo_SetAngle(SERVO1, 90);  
        		  LED_voidSetLEDHigh(LED4);   //Buzzer
        		  UART_Sendstr(res , length);
        		  _delay_ms(1000);
